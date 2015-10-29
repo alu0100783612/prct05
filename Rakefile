@@ -12,3 +12,7 @@ desc "Prueba de Resta"
 task :restar do
     sh "ruby -I. test/test_1.rb -n /restar/"
 end
+desc "Prueba Multiplicacion"
+task :multiplicar do
+    sh "ruby -I. test/test_1.rb -n /multiplicar/"
+end

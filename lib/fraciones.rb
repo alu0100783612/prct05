@@ -55,5 +55,9 @@ attr_reader :numerador, :denominador
     
     Fracciones.new(num1-num2,denominadorcalculado)
     end
-
+def * (other)
+    
+    Fracciones.new(@numerador*other.numerador, @denominador*other.denominador)
+    
+end
 end 
