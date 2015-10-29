@@ -60,4 +60,9 @@ def * (other)
     Fracciones.new(@numerador*other.numerador, @denominador*other.denominador)
     
 end
+def / (other)
+    
+
+    Fracciones.new(@numerador*other.denominador,@denominador*other.numerador)
+end
 end 

@@ -16,3 +16,7 @@ desc "Prueba Multiplicacion"
 task :multiplicar do
     sh "ruby -I. test/test_1.rb -n /multiplicar/"
 end
+desc "Prueba Division"
+task :dividir do
+    sh "ruby -I. test/test_1.rb -n /dividir/"
+end

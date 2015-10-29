@@ -16,6 +16,7 @@ class TestPoint < Test::Unit::TestCase
         assert_equal("9/10", (@medio+@otro).to_s)
         assert_equal("1/10", (@medio-@otro).to_s)
         assert_equal("2/10", (@medio*@otro).to_s)
+        assert_equal("5/4", (@medio/@otro).to_s)
     end
     
     def sumar
@@ -28,5 +29,8 @@ class TestPoint < Test::Unit::TestCase
     
     def multiplicar
         assert_equal("2/10", (@medio*@otro).to_s)
+    end
+    def dividir
+        assert_equal("5/4", (@medio/@otro).to_s)
     end
 end
