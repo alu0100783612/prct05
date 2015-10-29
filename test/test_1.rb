@@ -14,5 +14,14 @@ class TestPoint < Test::Unit::TestCase
         assert_equal("1/1", @inicio.to_s)
         assert_equal("1/2", @medio.to_s)
         assert_equal("9/10", (@medio+@otro).to_s)
+        assert_equal("1/10", (@medio-@otro).to_s)
+    end
+    
+    def sumar
+        assert_equal("9/10", (@medio+@otro).to_s)
+    end
+    
+    def restar
+         assert_equal("1/10", (@medio-@otro).to_s)
     end
 end

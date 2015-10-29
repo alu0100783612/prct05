@@ -37,5 +37,23 @@ attr_reader :numerador, :denominador
     
     Fracciones.new(num1+num2,denominadorcalculado)
     end
+    
+    def -(other)
+        
+        dr=@denominador*other.denominador
+    
+    denominadorcalculado=dr/gcd(@denominador,other.denominador)
+    
+    
+    
+    calculo1=denominadorcalculado/@denominador
+    num1=calculo1*@numerador
+
+    calculo2=denominadorcalculado/other.denominador
+    num2=calculo2*other.numerador
+    
+    
+    Fracciones.new(num1-num2,denominadorcalculado)
+    end
 
 end 
